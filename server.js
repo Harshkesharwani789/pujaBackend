@@ -27,7 +27,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: "http://localhost:3001",
+    origin: "https://puja-react-75vb.vercel.app",
     credentials: true,
   })
 );
