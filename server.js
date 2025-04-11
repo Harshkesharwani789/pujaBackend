@@ -25,12 +25,7 @@ const __dirname = path.dirname(__filename);
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(
-  cors({
-    origin: "https://puja-react-75vb.vercel.app",
-    credentials: true,
-  })
-);
+app.use(cors());
 
 // Static files
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
