@@ -12,7 +12,7 @@ import { authenticate, isAdmin } from "../middleware/auth.js";
 const router = express.Router();
 
 // Get all users (admin only)
-router.get("/", authenticate, isAdmin, getAllUsers);
+router.get("/", authenticate, getAllUsers);
 
 // Get user by ID (admin only)
 router.get("/:id", authenticate, isAdmin, getUserById);
